@@ -1,0 +1,267 @@
+
+:root {
+  --gold-color: #E3B873;
+}
+html {
+  font-size: 13px;
+  box-sizing: border-box;
+}
+body * {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "NunitoSans";
+}
+.container {
+  width: 1256px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.title,
+.subtitle {
+  font-family: 'Yeseva One', cursive;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.projects-title {
+  margin: 0;
+  color: var(--gold-color);
+  font-size: 27px;
+  line-height: 37px;
+  letter-spacing: -0.07em;
+}
+
+
+.projects-nav {
+  padding-left: 0;
+  display: flex;
+  list-style-type: none;
+  font-family: Yeseva One, serif;
+}
+
+.projects-nav-item a {
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 15px;
+  color: #fff;
+  transition: color .3s ease;
+}
+.projects-nav-item a:hover,
+.projects-nav-item a.active {
+  color: var(--gold-color);
+  padding-bottom: 6px;  
+  border-bottom: 1px solid var(--gold-color);
+}
+
+
+.projects {
+  height: 1074px;
+  background: #131313;
+}
+.projects-container {
+  padding-top: 107px;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+}
+.projects-text {
+  flex-basis: 442px;
+  margin-right: 50px;
+  color: #FFFFFF;
+  font-family: Nunito Sans, sans-serif;
+}
+.projects-text>p {
+  font-size: 14px;
+  line-height: 27px;
+  margin-top: 34px;
+  margin-bottom: 42px;
+}
+.projects-about-item {
+  display: flex;
+  line-height: 21px;
+}
+.wrapper {
+  margin-bottom: 33px;
+}
+.wrapper:first-child {
+  flex-basis: 126px;
+  margin-right: 64px;
+}
+.projects-about-title {
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--gold-color);
+}
+.projects-about-text {
+  margin-top: 9px;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+.projects-controls {
+  display: flex;
+  align-items: center;
+  margin-top: 29px;
+}
+.projects-controls-icon {
+  cursor: pointer;
+  fill: rgba(255, 255, 255, .3);
+}
+.projects-controls-icon:hover,
+.point.active {
+  fill: rgb(255, 255, 255);
+}
+.arrow  {
+  width: 35px;
+  height: 35px;
+}
+.arrow-left {
+  margin-right: 30px;
+}
+.arrow-right {
+  margin-left: 30px;
+}
+.point {
+  width: 11px;
+  height: 11px;
+  margin: 0 8px;
+  transition: all .3s ease;
+}
+.point.active,
+.point:hover {
+  width: 12px;
+  height: 12px;
+}
+.projects-img {
+  width: 679px;
+
+}
+
+.mobile-arrow {
+  position: absolute;
+  top: calc(50% - 18px);
+  display: none;
+}
+.mobile-arrow:nth-of-type(2n+1) {
+  right: 15px;
+}
+.mobile-arrow:nth-of-type(2n) {
+  left: 15px;
+}
+.projects-nav {
+  display: flex;
+  margin: 0 0 45px 0;
+}
+.projects-nav-item {
+  margin-right: 60px;
+}
+.projects-nav-item:nth-of-type(3) {
+  margin-right: 0;
+}
+.projects-nav-item a {
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 0.3);
+  padding-bottom: 6px;
+}
+
+
+
+
+@media (max-width: 1290px) {
+  .container {
+    max-width: 100%;
+  }
+  section,
+  .header,
+  .footer {
+    padding: 0 18px;
+  }
+
+  .projects-container {
+    flex-wrap: nowrap;
+  }
+}
+  
+@media (max-width: 1024px) {
+  html {
+    font-size: 11px;
+  }
+
+  .subtitle {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  
+  .projects {
+    min-height: auto;
+  }
+  .projects-container {
+    padding-top: 36px;
+    display: block;
+    position: relative;
+    padding-bottom: 180px;
+  }
+  .projects-title {
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .projects-title--absolute {
+    position: absolute;
+    top: 36px;
+    right: calc(50% - 62px);
+  }
+  .projects-text {
+    margin: 0 auto;
+  }
+  .projects-text>p {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    top: 80px;
+  }
+  .projects-controls,
+  .projects-nav {
+    display: none;
+  }
+  .projects-about {
+    position: relative;
+    top: 230px;
+  }
+  .projects-about-title {
+    font-size: 14px;
+  }
+  .projects-img {
+    position: relative;
+    top: 200px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+
+  .mobile-arrow {
+    display: block;
+  }
+
+}
+
+.slider-container {
+  overflow: hidden;
+  max-width: 679px;
+  margin: 0 auto;
+  position: relative;
+}
+.slider-track {
+  display: flex;
+  transition: all .3s;
+}  
+  
+
+
